@@ -2,8 +2,6 @@ import React from "react";
 import { useState, useEffect } from "react";
 import "./header.scss";
 import { HiDownload } from "react-icons/hi";
-import { AiFillHome } from "react-icons/ai";
-import { BsPersonCircle } from "react-icons/bs";
 
 function Header() {
   const [resolucion, setResolucion] = useState("");
