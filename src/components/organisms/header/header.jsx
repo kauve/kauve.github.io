@@ -25,9 +25,9 @@ function Header() {
         <div className="nav-links-container">
           <p className="name">Carlos Hernandez</p>
 
-          <p className="nav-link">Home</p>
-
           <p className="nav-link">About me</p>
+
+          <p className="nav-link">Skills</p>
 
           <p className="nav-link">Proyects</p>
 
