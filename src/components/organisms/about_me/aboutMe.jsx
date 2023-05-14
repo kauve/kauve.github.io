@@ -2,7 +2,7 @@ import React from "react";
 import { Link as ScrollLink, Element } from "react-scroll";
 import "./aboutMe.scss";
 import logo from "../../../img/logo.png";
-import img from "../../../img/pp2.jpg";
+import img from "../../../img/pp3.jpeg";
 
 function AboutMe() {
   return (
