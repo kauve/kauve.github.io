@@ -1,7 +1,8 @@
 import React from "react";
+import { Link as ScrollLink, Element } from "react-scroll";
 import "./aboutMe.scss";
 import logo from "../../../img/logo.png";
-import img from '../../../img/pp2.jpg'
+import img from "../../../img/pp2.jpg";
 
 function AboutMe() {
   return (
@@ -18,8 +19,28 @@ function AboutMe() {
             projects.
           </p>
           <div className="buttons-container">
-            <button className="see-job">See my past work</button>
-            <button className="contact">Contact me</button>
+            <ul>
+              <li>
+                <ScrollLink
+                  to="appsWork"
+                  smooth={true}
+                  duration={500}
+                  className="see-job"
+                >
+                  See my past work
+                </ScrollLink>
+              </li>
+              <li>
+                <ScrollLink
+                  to="/"
+                  smooth={true}
+                  duration={500}
+                  className="contact"
+                >
+                  Contact me
+                </ScrollLink>
+              </li>
+            </ul>
           </div>
         </div>
         <div className="aboutme-img">

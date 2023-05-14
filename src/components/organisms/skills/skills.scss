@@ -3,13 +3,16 @@
 .skills-container-full {
   width: 100%;
   background-color: $primary-color;
-  height: 100%;
-  padding: 000px 0px 100px 0px;
+  height: calc(100vh - 80px);
+  padding: 80px 0px 0px 0px;
+  display: flex;
+
 
   .skills-container {
     max-width: 1100px;
     margin: auto;
-    height: 100%;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 
@@ -30,6 +33,9 @@
 }
 @media (max-width: $laptop) {
   .skills-container-full {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     .skills-container {
       .subtittle {
       }

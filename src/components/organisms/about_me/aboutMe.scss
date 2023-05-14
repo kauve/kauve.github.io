@@ -3,13 +3,12 @@
 .aboutme-container-full {
   width: 100%;
   background-color: $primary-color;
-  height: 100%;
-  border-top: 1px solid rgba($color: #fff, $alpha: 0.1);
-
+  min-height: calc(100vh - 80px);
+  padding: 80px 0px 0px 0px;
+  display: flex;
   .aboutme-container {
     max-width: 1000px;
     margin: auto;
-    padding: 100px 0px;
     display: flex;
     justify-content: space-between;
 
@@ -30,33 +29,54 @@
         font-weight: 400;
       }
       .buttons-container {
-        width: 100%;
         display: flex;
-        gap: 30px;
+        ul {
+          list-style: none;
+          width: 100%;
+          display: flex;
+          gap: 30px;
+          justify-content: center;
 
-        button {
-          border-radius: 2px;
-          border: none;
-          width: 50%;
-          padding: 10px 0px;
+          li {
+            display: flex;
+            width: 50%;
+            text-align: center;
+          }
 
-          font-size: 16px;
-          cursor: pointer;
+          li .see-job {
+            border-radius: 2px;
+            border: none;
+            padding: 10px 10px;
+
+            width: 100%;
+            background-color: $secundary-color;
+            color: rgba($color: #fff, $alpha: 0.7);
+            font-weight: 500;
+
+            font-size: 16px;
+            cursor: pointer;
+          }
+          li .contact {
+            width: 100%;
+            border-radius: 2px;
+            border: none;
+
+            padding: 10px 10px;
+
+            background-color: rgba($color: #000000, $alpha: 0.3);
+            color: rgba($color: #fff, $alpha: 0.7);
+            font-weight: 500;
+
+            font-size: 16px;
+            cursor: pointer;
+          }
         }
-
-        .contact {
-          background-color: rgba($color: #000000, $alpha: 0.3);
-          color: rgba($color: #fff, $alpha: 0.7);
-          font-weight: 400;
-        }
-        .see-job {
-          background-color: $secundary-color;
-          color: rgba($color: #fff, $alpha: 0.7);
-          font-weight: 500;
-        }
-
-        button:hover {
+        li .contact:hover,
+        li .see-job:hover {
           color: #fff;
+          transition: ease-in all 100ms;
+        }
+        li:hover {
           transform: scale(1.04);
           transition: ease-in all 100ms;
         }
@@ -94,16 +114,25 @@
       max-width: 85%;
       display: flex;
       flex-direction: column-reverse;
-      padding: 50px 0px;
       .aboutme-text {
         max-width: 100%;
+        .buttons-container {
+          ul {
+            flex-direction: column;
+            gap: 10px;
+
+            li {
+              width: 100%;
+            }
+          }
+        }
       }
       .aboutme-img {
         display: flex;
         justify-content: center;
         img {
           width: auto;
-          height: 500px;
+          height: 350px;
           border-radius: 5px;
         }
       }

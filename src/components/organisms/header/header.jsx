@@ -1,4 +1,5 @@
 import React from "react";
+import { Link as ScrollLink } from "react-scroll";
 import { useState, useEffect } from "react";
 import "./header.scss";
 import { HiDownload } from "react-icons/hi";
@@ -7,12 +8,11 @@ function Header() {
   const [resolucion, setResolucion] = useState("");
 
   const handleDownload = () => {
-    const downloadLink = document.createElement('a');
-    downloadLink.href = '/img/cv.jpg';
-    downloadLink.download = 'cv.jpg';
+    const downloadLink = document.createElement("a");
+    downloadLink.href = "/img/cv.jpg";
+    downloadLink.download = "cv.jpg";
     downloadLink.click();
   };
-
 
   useEffect(() => {
     function actualizarResolucion() {
@@ -33,13 +33,23 @@ function Header() {
         <div className="nav-links-container">
           <p className="name">Carlos Hernandez</p>
 
-          <p className="nav-link">About me</p>
-
-          <p className="nav-link">Skills</p>
-
-          <p className="nav-link">Proyects</p>
-
-          <p className="nav-link">Contact</p>
+          <ul>
+            <li className="nav-link">
+              <ScrollLink to="aboutMe" smooth={true} duration={500}>
+                About Me
+              </ScrollLink>
+            </li>
+            <li className="nav-link">
+              <ScrollLink to="skills" smooth={true} duration={500}>
+                Skills
+              </ScrollLink>
+            </li>
+            <li className="nav-link">
+              <ScrollLink to="appsWork" smooth={true} duration={500}>
+                Work
+              </ScrollLink>
+            </li>
+          </ul>
         </div>
         <div className="cv-container">
           {resolucion ? (
