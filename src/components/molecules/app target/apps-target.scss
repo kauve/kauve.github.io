@@ -1,0 +1,67 @@
+@import "../../../styles/global.scss";
+
+.container-app-target {
+  width: 29%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  border: rgba($color: #000, $alpha: 0.1) 1px solid;
+  border-radius: 5px;
+  padding: 5px;
+  background-color: rgba($color: #000000, $alpha: 0.2);
+
+  .foto {
+    .titulo {
+      font-size: 25px;
+      color: #fff;
+      font-weight: 700;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+    img {
+      width: 100%;
+    }
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+
+    .descripcion {
+      color: rgba($color: #fff, $alpha: 0.5);
+      text-align: justify;
+    }
+    .containers-button {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      gap: 10px;
+
+      .job {
+        background-color: $secundary-color;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        padding: 6px;
+        cursor: pointer;
+        transition: all ease-in 100ms;
+      }
+      .code {
+        background-color: rgba($color: #fff, $alpha: 0.5);
+        color: #fff;
+        border: none;
+        background-color: rgba($color: #000000, $alpha: 0.3);
+        border-radius: 5px;
+        padding: 6px;
+        cursor: pointer;
+        transition: all ease-in 100ms;
+      }
+
+      .job:hover,
+      .code:hover {
+        transform: scale(1.02);
+      }
+    }
+  }
+}
