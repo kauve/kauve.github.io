@@ -1,7 +1,7 @@
 import React from "react";
 import "./aboutMe.scss";
 import logo from "../../../img/logo.png";
-import img from "../../../img/img.jpeg";
+import img from '../../../img/pp2.jpg'
 
 function AboutMe() {
   return (
@@ -10,12 +10,12 @@ function AboutMe() {
         <div className="aboutme-text">
           <img src={logo} alt="logo" />
           <p>
-            Self-motivated and passionate about Front End UI development. Strong
-            skills with JavaScript, CSS, HTML, React, Redux, Next.js, Node.js,
-            SQL-noSQL. working on amazing user interfaces. I currently work for
-            my freelance projects with the React framework, Next.js integrating
-            style libraries such as ChakraUI or TailwindCSS, also integrating
-            OAuth, Firestore and Stripe.
+            Hello! I'm Carlos Hernandez, an 8th semester student in Software
+            Engineering. As a React.js-focused web developer, I have strong
+            skills in HTML, CSS, and JavaScript. I'm passionate about creating
+            interactive and functional interfaces, and I'm excited to join a
+            dynamic team and contribute to the success of innovative web
+            projects.
           </p>
           <div className="buttons-container">
             <button className="see-job">See my past work</button>

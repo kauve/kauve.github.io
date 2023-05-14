@@ -4,15 +4,12 @@ import "./skills.scss";
 
 function Skills() {
   const skills = [
-    { id: 1, name: "Javascript" },
-    { id: 2, name: "css3" },
-    { id: 3, name: "HTML5" },
-    { id: 4, name: "HTML5" },
-    { id: 5, name: "HTML5" },
-    { id: 6, name: "HTML5" },
-    { id: 7, name: "HTML5" },
-    { id: 8, name: "HTML5" },
-    { id: 9, name: "HTML5" },
+    { id: 1, name: "HTML5" },
+    { id: 2, name: "Sass" },
+    { id: 3, name: "Javascript" },
+    { id: 4, name: "React.Js" },
+    { id: 5, name: "Git" },
+    { id: 6, name: "Scrum" },
   ];
 
   const listaSkills = skills.map((skills) => {

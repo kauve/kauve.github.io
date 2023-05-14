@@ -6,6 +6,14 @@ import { HiDownload } from "react-icons/hi";
 function Header() {
   const [resolucion, setResolucion] = useState("");
 
+  const handleDownload = () => {
+    const downloadLink = document.createElement('a');
+    downloadLink.href = '/img/cv.jpg';
+    downloadLink.download = 'cv.jpg';
+    downloadLink.click();
+  };
+
+
   useEffect(() => {
     function actualizarResolucion() {
       const anchoVentana = window.innerWidth;
@@ -35,7 +43,7 @@ function Header() {
         </div>
         <div className="cv-container">
           {resolucion ? (
-            <button>
+            <button onClick={handleDownload}>
               Descargar cv <HiDownload />
             </button>
           ) : (

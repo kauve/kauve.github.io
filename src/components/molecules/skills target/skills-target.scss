@@ -11,27 +11,43 @@
   display: flex;
   gap: 20px;
   border-radius: 5px;
-  .icon {
-    color: white;
-    font-size: 20px;
-  }
-  .text{
-    color: white;
-    font-size: 20px;
-    font-weight: 500;
-
+  .container-target2 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: space-between;
+    .icon {
+      color: white;
+      font-size: 20px;
+    }
+    .text {
+      color: white;
+      font-size: 20px;
+      font-weight: 500;
+    }
   }
 }
 
 @media (max-width: $laptop) {
   .container-target {
-    max-width: 80%;
+    max-width: 35%;
+    .container-target2 {
+      display: flex;
+      width: 200px;
+      justify-content: start;
+      .icon {
+
+      }
+      .text {
+      
+      }
+    }
   }
 }
 
 @media (max-width: $movil) {
   .container-target {
     max-width: 75%;
+    width: 300px;
   }
 }
-

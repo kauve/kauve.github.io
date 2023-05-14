@@ -13,7 +13,7 @@ function AppsTarget({titulo,descripcion,img}) {
          {descripcion}
         </p>
         <div className="containers-button">
-          <button className="job"> See job </button>
+          <button className="job"> See proyect </button>
           <button className="code"> See code </button>
         </div>
       </div>

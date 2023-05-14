@@ -7,9 +7,9 @@ function AppsWork() {
   const apps = [
     {
       id: 1,
-      titulo: "Pharmek",
-      descripcion:"Pagina web for Pharmek SAC Laboratories, using HTML5, CSS3 y Javascript.",
-      imagen: '/img/pharmek.png',
+      titulo: "Personal Portfolio",
+      descripcion:"Personal portfolio! Explore my creative work in Front-End develop, featuring projects developed with React.js. Discover interactive web designs and innovative applications that showcase my passion for this technology. Enjoy exploring my work and my search for job opportunities in React.js!",
+      imagen: '/img/portfolio.png',
     },
     {
       id: 2,
@@ -19,7 +19,7 @@ function AppsWork() {
     },
     {
       id: 3,
-      titulo: "Pharmek 3",
+      titulo: "Pharmek",
       descripcion:"Pagina web for Pharmek SAC Laboratories, using HTML5, CSS3 y Javascript.",
       imagen: '/img/pharmek.png',
     },

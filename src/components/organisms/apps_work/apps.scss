@@ -13,24 +13,55 @@
     justify-content: center;
     align-items: center;
 
-    .subtittle{
-        color: rgba($color: #fff, $alpha: 1.0);
-        text-align: center;
-        margin-bottom: 10px;
-        font-size: 60px;
+    .subtittle {
+      color: rgba($color: #fff, $alpha: 1);
+      text-align: center;
+      margin-bottom: 10px;
+      font-size: 60px;
     }
-    .description{
-      color:rgba($color: #fff, $alpha: 0.6);
+    .description {
+      color: rgba($color: #fff, $alpha: 0.6);
       text-align: center;
       margin-bottom: 40px;
     }
-    .apps-target-container{
+    .apps-target-container {
       display: flex;
       flex-wrap: wrap;
       margin: auto;
       max-width: 1000px;
       gap: 20px;
       justify-content: space-between;
+    }
+  }
+}
+
+@media (max-width: $laptop) {
+  .apps-container-full {
+    .apps-container {
+      .subtittle {
+        width: 85%;
+        margin: 0px auto 30px auto;
+      }
+      .description {
+        width: 85%;
+        margin: 0px auto 30px auto;
+      }
+      .apps-target-container {
+        gap: 30px;
+      }
+    }
+  }
+
+  @media (max-width: $tablet) {
+    .apps-container-full {
+      .apps-container {
+        .subtittle {
+        }
+        .description {
+        }
+        .apps-target-container {
+        }
+      }
     }
   }
 }
